@@ -27,7 +27,7 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="script.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
