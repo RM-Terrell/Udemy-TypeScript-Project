@@ -1,14 +1,16 @@
-function Greeter(greeting) {
+﻿function Greeter(greeting: string) {
     this.greeting = greeting;
 }
+
 Greeter.prototype.greet = function () {
     return "Hello, " + this.greeting;
-};
-var greeter = new Greeter("world");
-var button = document.createElement('button');
+}
+let greeter = new Greeter("world");
+
+let button = document.createElement('button');
 button.textContent = "Say Hello";
 button.onclick = function () {
     alert(greeter.greet());
 };
+
 document.body.appendChild(button);
-//# sourceMappingURL=script.js.map
