@@ -45,4 +45,14 @@ var Color;
 var myColor = Color.Green;
 console.log(myColor);
 //Result of this is 1. Not Green. Numbers are assigned automatically as shown in comments.
+// Functions
+function returnMyName() {
+    return myName;
+}
+console.log(returnMyName());
+// Void
+function sayHello() {
+    console.log("Hello!");
+    //return myName; will result in an error if ran. Void should not return anything.
+}
 //# sourceMappingURL=scripts.js.map
