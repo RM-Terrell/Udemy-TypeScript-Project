@@ -30,3 +30,44 @@ let hasHobbies = true;
 
 //If i try to assign = 1, will thrown and error.
 
+
+// Assign types
+let myRealAge; 
+myRealAge = 27;
+myRealAge = '27';
+
+//Assigns to type 'any' and thus i dont get errors. "Back to javascript world."
+//Let myRealAge: number; to explicitly assigns the type
+
+
+// Array
+let hobbies = ["Cooking", "Sports"];
+console.log(hobbies[0]);  //Logs to console the 0th item
+
+//console.log(typeof hobbies); Logs the type
+//hobbies = [100]; will result in an error because hobbies is an array of strings
+//let hobbies : any[] = ["Cooking", "Sports"]; will remove the error by assigning type any
+
+
+// Tuples
+let address: [string, number] = ["Superstreet", 99];
+
+//Changeing order of "superstreet" and 99 will rresult in an error. Ordering matters.
+
+
+// Enums
+enum Color {
+    Gray, //0
+    Green, //1
+    Blue, //2
+    Red = 50, //Example of manual assigning.
+    Orange //Number for this will be 51
+}
+let myColor: Color = Color.Green;
+console.log(myColor);
+
+//Result of this is 1. Not Green. Numbers are assigned automatically as shown in comments.
+
+
+
+
