@@ -86,11 +86,39 @@ var userData = {
 //This code will result in an eror because of this behind the scenes assigning
 // userData = {a:"Hello", b:22);
 //-------------------------------------------------------------------------------------------------------------------------------------------//
-//Example of a Complex Object
+// Example of a Complex Object
 var complex = {
     data: [100, 3.99, 10],
     output: function (all) {
         return this.data;
     }
 };
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+// Union Types
+var myRealRealAge = 27; // "|" is an "or"
+myRealRealAge = "27";
+//This causes an error if we try to assign myRealRealAge to "true". If we used any no error would result. Allows more specific, but no too general type assignment.
+// Check Types
+var finalValue = 30;
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+// TS 2.0
+// Never
+function neverReturn() {
+    throw new Error('An error!');
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+//Nullable Types
+var canBeNull = 12;
+canBeNull = null; //By setting strictnullchecks to true this will result in an error. cant assign null now. Added the union type above to fix this.
+var canAlsoBeNull; //Defaults to type 'any', value 'undefined'
+canAlsoBeNull = null; //Assigned strictly to null with nullchecks on. cant be a number now.
 //# sourceMappingURL=scripts.js.map

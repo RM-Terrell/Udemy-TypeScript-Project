@@ -127,7 +127,7 @@ let userData = {  //TS behind the scenes assumes the type of userData just with 
 // userData = {a:"Hello", b:22);
 //-------------------------------------------------------------------------------------------------------------------------------------------//
 
-//Example of a Complex Object
+// Example of a Complex Object
 let complex: {data: number[], output: (all: boolean) => number[]} = {
     data: [100, 3.99, 10],
 
@@ -136,6 +136,50 @@ let complex: {data: number[], output: (all: boolean) => number[]} = {
     }
 
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+
+// Custom Types
+
+// Type Alias
+
+type Complex = { data: number[], output: (all: boolean) => number[] };
+
+let complex2: Complex = {  //This allows us to edit the type Complex in one place and have it change where ever it is used. Much easier than copying all the type data and editting  it everytime.
+    data: [100, 3.99, 10],
+
+    output: function (all: boolean): number[] {
+        return this.data;
+    }
+
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+
+// Union Types
+let myRealRealAge: number | string = 27;  // "|" is an "or"
+myRealRealAge = "27";
+
+//This causes an error if we try to assign myRealRealAge to "true". If we used any no error would result. Allows more specific, but no too general type assignment.
+
+// Check Types
+let finalValue = 30;
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+
+// TS 2.0
+
+// Never
+function neverReturn():never { 
+    throw new Error('An error!');
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Nullable Types
+let canBeNull: number | null = 12;
+canBeNull = null; //By setting strictnullchecks to true this will result in an error. cant assign null now. Added the union type above to fix this.
+let canAlsoBeNull; //Defaults to type 'any', value 'undefined'
+canAlsoBeNull = null; //Assigned strictly to null with nullchecks on. cant be a number now.
 
 
 
