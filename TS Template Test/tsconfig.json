@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
-    "noEmitOnError": true,
+    "noImplicitAny": false, 
+    "noEmitOnError": true,//This handles compiling even with errors. "True" = no compile with erros
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "module": "commonjs"
+    
   },
   "exclude": [
     "node_modules",

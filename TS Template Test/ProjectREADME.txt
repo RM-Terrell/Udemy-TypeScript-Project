@@ -11,7 +11,8 @@
 -The never type
 -adding tsconfig.json
 -strictnullchecks
-
+-Typescript compiler, compiles even with errors. tsconfig file lets you change that however
+-
 
 
 
