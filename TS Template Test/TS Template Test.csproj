@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>2.0</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -30,6 +30,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Exercise1Section2.ts" />
     <TypeScriptCompile Include="scripts.ts" />
+    <TypeScriptCompile Include="Section4.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
