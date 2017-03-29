@@ -30,4 +30,18 @@ const addNumbers = function (number1: number, number2: number): number
 console.log(addNumbers(10, 3));
 
 const multiplyNumbers = (number1: number, number2: number) => number1 * number2;
-console.log(multiplyNumbers(10,3));
+console.log(multiplyNumbers(10, 3));
+
+
+//Default Paramters
+const countdown = (start: number): void =>
+{
+    while (start > 0) {
+        start--;
+    }
+    console.log("Done", start);
+
+};
+
+countdown(10); //Works as expected.
+//countdown(): undefined. However setting "start: number = 10 will make it a default value and work as expected
