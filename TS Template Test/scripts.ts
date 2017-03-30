@@ -225,7 +225,7 @@ const addNumbers = function (number1: number, number2: number): number {
 };
 console.log(addNumbers(10, 3));
 
-const multiplyNumbers = (number1: number, number2: number) => number1 * number2;
+const multiplyNumbers = (number1: number, number2: number) => number1 * number2; //Exmaple of arrow function
 console.log(multiplyNumbers(10, 3));
 
 
@@ -242,9 +242,9 @@ countdown(10); //Works as expected.
 //countdown(): undefined. However setting "start: number = 10 will make it a default value and work as expected
 
 // Rest and Spread
-const numbers = [1, 10, 99, -5];
+const numbersTwo = [1, 10, 99, -5];
 console.log(Math.max(33, 99, 10, -3, 22));
-console.log(Math.max(...numbers)); //... Spread. Acts to essentially remove the square brackets and grab the list of numbers since we cant call numbers directly in Math.macx()
+console.log(Math.max(...numbersTwo)); //... Spread. Acts to essentially remove the square brackets and grab the list of numbers since we cant call numbers directly in Math.macx()
 //Avoid complex loops and such to assess arrays
 
 function makeArray(...args: number[]) { //Rest. Whatever args is, turn into an array
@@ -253,7 +253,25 @@ function makeArray(...args: number[]) { //Rest. Whatever args is, turn into an a
 console.log(makeArray(1, 2, 6));
 
 // Desctructuring 
+const myHobbies = ["Cooking", "Sports"];
 
+//We are going to avoid doing this
+//const hobby1 = myHobbies[0];
+//const hobby2 = myHobbies[1];
+//console.log(hobby1, hobby2);
 
+const [hobby1, hobby2] = myHobbies; //Does the same thing as above, creates new vars and assigns them as desired in less code
+console.log(hobby1, hobby2);
 
+const userInfo = { userName: "Max", age: 27 }; //Not just for arrays, also works for objects
+const {userName, age} = userInfo;
+console.log(userName, age);
+
+// Template Literals
+
+const userFullName = "Max";
+const greeting = `This is a heading
+I'm ${userFullName} and Im using multiline strings with back ticks.
+`;
+console.log(greeting);
 

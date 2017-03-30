@@ -14,6 +14,12 @@
 -Typescript compiler, compiles even with errors. tsconfig file lets you change that however
 -TS has good documentation. Favorited it. 
 -No unused paramaters
+-Let and const
+-Block scope
+-Arrow functions
+-Default paramters
+-Rest and Spread
+-Destructuring
 
 
 
@@ -25,6 +31,8 @@
 
 
 Needs more research:
+-The never type
+
 
 
 
