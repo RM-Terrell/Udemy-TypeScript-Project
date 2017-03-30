@@ -1,4 +1,6 @@
-﻿//function Greeter(greeting: string) {
+﻿//SECTIONS 1-4
+
+//function Greeter(greeting: string) {
 //    this.greeting = greeting;
 //}
 

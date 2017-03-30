@@ -28,11 +28,12 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Classes.ts" />
     <TypeScriptCompile Include="Section2Exercise.ts" />
     <TypeScriptCompile Include="Section4Exercise.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="scripts.ts" />
+    <TypeScriptCompile Include="Types.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
