@@ -30,7 +30,6 @@
   <ItemGroup>
     <TypeScriptCompile Include="Exercise1Section2.ts" />
     <TypeScriptCompile Include="scripts.ts" />
-    <TypeScriptCompile Include="Section4.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
