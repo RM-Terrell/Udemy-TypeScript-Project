@@ -111,3 +111,4 @@ class ITProject extends Project
         this.projectName = name; //of couse this could have been done elsewhere, but you have to use changeName since it is inherited
     }
 }
+
