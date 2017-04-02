@@ -29,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Classes.ts" />
+    <TypeScriptCompile Include="NamespaceAndModules.ts" />
     <TypeScriptCompile Include="Section2Exercise.ts" />
     <TypeScriptCompile Include="Section4Exercise.ts">
       <SubType>Code</SubType>

@@ -131,7 +131,7 @@ class PersonEX
             this._firstName = value;
         }
         else {
-            this._firstName = ""; // Coudl skip this entirely but showing explicitly how to reset given conditional
+            this._firstName = ""; // Could skip this entirely but showing explicitly how to reset given conditional
         }
     }
 }
