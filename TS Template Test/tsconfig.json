@@ -6,7 +6,7 @@
     "sourceMap": true, //if true, you see js file and js.map file after compile.can also see the ts file in browser dev tools
     "target": "es5",
     "strictNullChecks": true,
-    "module": "commonjs"
+    "module": "commonjs" //Set tp AMD to compile to one file
     
   },
   "exclude": [
