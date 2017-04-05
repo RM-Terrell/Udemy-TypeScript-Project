@@ -20,6 +20,9 @@
 -Default paramters
 -Rest and Spread
 -Destructuring
+-Namespaces and Modules
+-Interfaces
+
 
 
 
@@ -32,6 +35,7 @@
 
 Needs more research:
 -The never type
+-Using interfaces
 
 
 
