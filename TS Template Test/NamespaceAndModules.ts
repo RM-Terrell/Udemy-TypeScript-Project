@@ -1,7 +1,8 @@
 ﻿// Namespaces
 namespace MyMath
-    {
+{
     const PI = 3.14;
+
 
     export function calcCirc(diameter: number) //must use export to make accessable. Can also nest more namespaces in this namespace
     {
@@ -30,6 +31,19 @@ console.log(calculateCircumf);
 //console.log();
 //May need a module loader to make this work. SystemJS for example
 
+//Summary
+
+//Namespaces:
+//Organize app with js objects
+//Split into multiple files
+//no modules loader needed
+//Difficult dependecies in large apps
+
+//Modules:
+//Organize with real modules (instead of proxy objects)
+//Split over multiples files
+//Need a module loader (as of April 2017)
+//Explicit dependencies
 
 
 
