@@ -30,3 +30,8 @@ const person2: NamedPerson = {
 };
 
 // greet(person2);
+
+
+
+// Function Types
+
