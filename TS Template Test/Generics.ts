@@ -24,3 +24,26 @@ const testingResults: Array<number> = [1.94, 2.33]; // Generic type array with n
 testResults.push(-2.99);
 //Wont be able to push a string to it now
 
+// Generic Types
+
+const echo2: <T>(data: T) => T = echo;
+
+console.log(echo2<string>("Something"));
+
+// Generic Class
+
+class SimpleMath<T> // "<T>" makes it a simple class that use specifies type stored in T
+{
+    baseValue: T;
+    multiplyValue: T;
+    calculate(): number
+    {
+        return +this.baseValue * +this.multiplyValue; // "+" casts to a number
+    }
+}
+
+const simpleMath = new SimpleMath();
+simpleMath.baseValue = 10;
+simpleMath.multiplyValue = 20;
+console.log(simpleMath.calculate());
+
