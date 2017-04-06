@@ -35,3 +35,19 @@ const person2: NamedPerson = {
 
 // Function Types
 
+interface DoubleValueFunc
+{
+    (number1: number, number2: number): number; //what ever uses this interface must be a function of this type
+}
+
+let myDoubleFunction: DoubleValueFunc;
+myDoubleFunction = function (value1: number, value2: number) //Names dont have to match, just the types
+{
+    return (value1 + value2) * 2;
+};
+
+console.log(myDoubleFunction(10, 20));
+
+// Interface Inheritance
+
+// Can use "Extends" to inherit a previous interface and extend it in the same way as previous inheritance techniques
