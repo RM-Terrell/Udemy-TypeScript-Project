@@ -29,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Classes.ts" />
+    <TypeScriptCompile Include="Decorators.ts" />
     <TypeScriptCompile Include="Generics.ts" />
     <TypeScriptCompile Include="Interfaces.ts" />
     <TypeScriptCompile Include="Math\circle.ts" />

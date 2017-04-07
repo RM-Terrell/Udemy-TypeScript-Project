@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false, 
-    "noEmitOnError": true,//This handles compiling even with errors. "True" = no compile with erros
+    "noImplicitAny": false,
+    "noEmitOnError": true, //This handles compiling even with errors. "True" = no compile with erros
     "removeComments": false,
     "sourceMap": true, //if true, you see js file and js.map file after compile.can also see the ts file in browser dev tools
     "target": "es5",
     "strictNullChecks": true,
-    "module": "commonjs" //Set tp AMD to compile to one file
-    
+    "module": "commonjs", //Set tp AMD to compile to one file
+    "experimentalDecorators": true
+
   },
   "exclude": [
     "node_modules",
