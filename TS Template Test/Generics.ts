@@ -47,3 +47,5 @@ simpleMath.baseValue = 10;
 simpleMath.multiplyValue = 20;
 console.log(simpleMath.calculate());
 
+
+

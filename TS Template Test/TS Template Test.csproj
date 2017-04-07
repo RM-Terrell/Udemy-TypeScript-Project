@@ -39,6 +39,7 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="Section5Exercise.ts" />
+    <TypeScriptCompile Include="Section8Exercise.ts" />
     <TypeScriptCompile Include="Types.ts" />
   </ItemGroup>
   <ItemGroup>
