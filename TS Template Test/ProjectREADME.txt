@@ -22,6 +22,10 @@
 -Destructuring
 -Namespaces and Modules
 -Interfaces
+-Decorators
+-Installing 3rd party libraries like jquery
+-"Definitly typed" for pre written type script repositories
+-tsconfig.json compilation options (just check the official documentation)
 
 
 
